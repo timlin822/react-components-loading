@@ -1,0 +1,87 @@
+/* Font Awesome Loading */
+.loading-fa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.loading-icon{
+    font-size: 100px;
+    color: #003366;
+    animation: fa-spinner 3s linear infinite;
+}
+@keyframes fa-spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Loading Dots */
+.loading-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.loading-dots span{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: dots 1.2s ease infinite;
+}
+.loading-dots span:first-child{
+    background-color: #fd79a8 ;
+}
+.loading-dots span:nth-child(2){
+    background-color: #009579;
+    animation-delay: 0.2s;
+}
+.loading-dots span:nth-child(3){
+    background-color: #ff676d ;
+    animation-delay: 0.4s;
+}
+.loading-dots span:nth-child(4){
+    background-color: #8d8d8d;
+    animation-delay: 0.6s;
+}
+.loading-dots span:nth-child(5){
+    background-color: #e84393;
+    animation-delay: 0.8s;
+}
+.loading-dots span:nth-child(6){
+    background-color: #7d2ae8;
+    animation-delay: 1s;
+}
+@keyframes dots{
+    50%{
+        transform: scale(0.3);
+    }
+}
+
+/* Loading Spinner */
+.loading-spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-spinner::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 15px solid #ddd;
+    border-top-color: #009579;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner{
+    to{
+        transform: rotate(1turn);
+    }
+}
