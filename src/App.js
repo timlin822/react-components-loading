@@ -1,6 +1,8 @@
 import FaLoading from 'components/loading/FaLoading';
 import LoadingDots from 'components/loading/LoadingDots';
 import LoadingSpinner from 'components/loading/LoadingSpinner';
+import LoadingBounce from 'components/loading/LoadingBounce';
+import LoadingProgressBar from 'components/loading/LoadingProgressBar';
 
 import './App.css';
 
@@ -11,6 +13,8 @@ function App() {
         <FaLoading />
         <LoadingDots />
         <LoadingSpinner />
+        <LoadingBounce />
+        <LoadingProgressBar />
       </div>
     </section>
   );
